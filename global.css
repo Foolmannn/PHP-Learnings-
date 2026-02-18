@@ -1,0 +1,16 @@
+        :root {
+            /* for buttons and logo shop ,highlights etc  */
+  --main-primary-orange: #FF6B00;
+  /* for navbar,footer and logo  */
+  --navbg-secondary-blue: #86b3f7;
+  /* for section bg  */
+  --sectionbg-light-blue: #E3F2FD;
+  /* for main bg  */
+  --mainbg-dark-blue: #0D47A1;
+  --text-dark: #222222;
+  /* For cards  */
+  --border-gray: #DDDDDD;
+  --card-bg-gray: #F5F5F5;
+
+  --accent-red: #D32F2F;
+}
