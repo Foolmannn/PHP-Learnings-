@@ -84,6 +84,17 @@
 
 
         }
+
+        .message {
+            /* background-color: green; */
+            /* width: 60vw; */
+            height: 10vw;
+            display: flex;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+
+        }
     </style>
 
 </head>
@@ -94,7 +105,8 @@
 
     </header>
     <div class="main">
-        <form action="redirect.php" method="POST">
+        <!-- <form action="./includes/login.php" method="POST"> -->
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])  ?>" method="POST">
             <div class="signuptable">
                 <h2>Login Page</h2>
 
@@ -118,14 +130,10 @@
 
         </form>
     </div>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $username = $_POST["username"];
-        $password = $_POST["password"];
-    }
+    <div class="message">
+        <?php include("includes/login.php"); ?>
 
-
-    ?>
+    </div>
 </body>
 
 </html>

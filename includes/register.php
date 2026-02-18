@@ -18,10 +18,10 @@
         $password = $_POST["password"];
         $userRole = $_POST["userRole"];
         switch ($userRole) {
-            case "Shoper":
+            case "shoper":
                 $role = "customer";
                 break;
-            case "Seller":
+            case "seller":
                 $role = "seller";
             default:
                 $role = NULL;
