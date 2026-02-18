@@ -53,19 +53,31 @@ h2{
     width: 250px;
     height: 27px;
   font-size: 20px;
+  /* padding: 7px; */
 
 }
 
 .registertable .btn{
     width: 150px;
-    height: 30px;
+    height: 33px;
     background-color: var(--mainbg-dark-blue);
     border-radius: 4px;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 28px;
 
 
+
+}
+.message{
+    /* background-color: green; */
+    /* width: 60vw; */
+    height: 10vw;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
 
 }
     </style>
@@ -116,7 +128,11 @@ h2{
 
     
 </form>
-<?php include("includes/register.php");?>
-    </div>
+</div>
+<div class="message">
+    <!-- hello hi how are you  -->
+    <?php include("includes/register.php");?>
+    
+</div>
 </body>
 </html>
