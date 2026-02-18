@@ -6,7 +6,7 @@
     <meta http-equiv="refresh" content="2">
 
     <title>Home Page</title>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/navbar.css">
 
     <style>

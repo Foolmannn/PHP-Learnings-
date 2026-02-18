@@ -6,7 +6,7 @@
     <meta http-equiv="refresh" content="2">
 
     <title>Document</title>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./css/global.css">
 
 </head>
 <body>

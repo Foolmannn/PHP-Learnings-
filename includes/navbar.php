@@ -15,5 +15,5 @@
         </div>
         <div class="signin">
             <a href="./login.php">Login</a>
-            <a href="./register.php">Register</a>
+            <a href="./registerform.php">Register</a>
     </div>

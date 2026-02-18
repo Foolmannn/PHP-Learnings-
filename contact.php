@@ -6,14 +6,14 @@
     <meta http-equiv="refresh" content="2">
 
     <title>contact</title>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <style>
 
         *{
             padding: 0;
             margin: 0;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: sans-serif ;
         }
 h2{
     font-size: 45px;
@@ -58,20 +58,7 @@ h2{
 </head>
 <body>
     <header>
-<div class="navbar">
-    
-        <div class="left">
-            <a href="./index.php">Home</a>
-            <!-- Using_DatabaseinPHP\addproductform.html -->
-         <a href="../Using_DatabaseinPHP/redirect.php">Product</a>
-
-            <a href="./contact.php">Contact</a>
-            <a href="./about.php">About Us</a>
-        </div>
-        <div class="signin">
-            <a href="./login.php">Login</a>
-            <a href="./register.php">Register</a>
-</div>
+        <?php include("includes/navbar.php");?>
 
     </header>
     <div class="main">
