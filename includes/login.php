@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
         } else {
-            echo "<p style='color:red;'>Invalid username or password</p>";
+            echo "<p style='color:red;'>Invalid password! Try again... </p>";
         }
 
     } else {
