@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="2">
 
-    <title>Document</title>
-        <link rel="stylesheet" href="./css/global.css">
-    
-    <link rel="stylesheet" href="./css/navbar.css">
-
-        <style>
+    <title>redirect.php</title>
+    <style>
         div{
             display:flex;
             justify-content:center;
@@ -25,20 +21,11 @@
         }
     </style>
 </head>
-<body>
-    seller_dashboard  
-    <header>  
-
-        <?php include("includes/navbar.php"); ?>
-
-    </header>
-<div>
-
+<body><div>
 <button><a href="addproductform.html">Add Products</a></button>
 <button><a href="addproduct.php">View Products</a></button>
 
 
 </div>
-
 </body>
 </html>

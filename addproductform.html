@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2" /> -->
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+
+    <style>
+      h2 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .main {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        /* background-color: aqua; */
+        /* height: 25vw; */
+        /* width: 100vw; */
+      }
+      .addproductform {
+        background-color: var(--sectionbg-light-blue);
+        margin: 10px;
+        padding: 20px 20px 50px 20px;
+        border: 2px solid black;
+        border-radius: 9px;
+        color: var(--text-dark);
+      }
+      .addproductform .hint {
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      input,
+      select {
+        font-size: 17px;
+        height: 21px;
+        width: 350px;
+        border: 1px solid black;
+      }
+      textarea {
+        font-size: 17px;
+        border: 1px solid black;
+      }
+      .submit {
+        width: auto;
+        /* padding:; */
+        background-color: var(--main-primary-orange);
+        color: var(--mainbg-dark-blue);
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 7px;
+        margin: 10px;
+        width: 100px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="addproduct.php" enctype="multipart/form-data"  method="post">
+         <!-- //enctype very necessary for file uploads -->
+      <h2>Product Addition Form</h2>
+      <div class="main">
+        <table class="addproductform">
+          <tr>
+            <td class="hint">Title:</td>
+            <td>
+              <input
+                type="text"
+                name="title"
+                placeholder="Enter the name/title for product."
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="hint">Price:</td>
+            <td>
+              <input
+                type="number"
+                name="price"
+                placeholder="Enter the price of the product"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+   
+            <td class="hint">Category:</td>
+            <td>
+              <select name="category" required>
+                <option value="" disabled selected>
+                  Select Product Category
+                </option>
+                <option value="electronic">Electronics</option>
+                <option value="stationary">Books and Stationary</option>
+                <option value="food">Food and Beverages</option>
+                <option value="fashoin">Fashion and Clothing</option>
+                <option value="home">Home and Kitchen</option>
+                <option value="sport">Sports and Outdoors</option>
+                <option value="cosmetic">Cosmetics and Beauty</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="hint">Upload Image:</td>
+            <td> <input type="file" name="product_image" accept="image/*" required></td>
+          </tr>
+          <tr>
+            <td class="hint">Description:</td>
+            <td>
+              <!-- <input type="text" height=200 width="200vw"   name="description" placeholder="Describe your product."> -->
+              <textarea
+                rows="5"
+                cols="50"
+                name="description"
+                id=""
+                placeholder="Describe your product"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="hint">
+              <input class="submit" type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
