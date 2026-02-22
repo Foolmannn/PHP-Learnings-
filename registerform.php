@@ -19,6 +19,8 @@ h2{
     font-size: 45px;
     color: var(--text-dark);
     padding: 16px;
+        text-decoration: underline;
+
 }
 .main{
     display: flex;

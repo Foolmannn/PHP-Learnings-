@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2" /> -->
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+
+    <style>
+      h2 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .main {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        /* background-color: aqua; */
+        /* height: 25vw; */
+        /* width: 100vw; */
+      }
+      .addproductform {
+        background-color: var(--sectionbg-light-blue);
+        margin: 10px;
+        padding: 20px 20px 50px 20px;
+        border: 2px solid black;
+        border-radius: 9px;
+        color: var(--text-dark);
+      }
+      .addproductform .hint {
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      input{
+        font-size: 17px;
+        height: 35px;
+        width: 350px;
+        border: 1px solid black;
+      }
+      textarea {
+        font-size: 17px;
+        border: 1px solid black;
+      }
+      .submit {
+        /* padding:; */
+        background-color: var(--main-primary-orange);
+        color: var(--mainbg-dark-blue);
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 7px;
+        margin: 10px;
+        width: 200px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="addcategory.php" enctype="multipart/form-data"  method="post">
+         <!-- //enctype very necessary for file uploads -->
+      <h2>Category Addition Form</h2>
+      <div class="main">
+        <table class="addproductform">
+
+            <tr>
+                <td class="hint">Category Name:</td>
+                <td><input type="text" name="categoryname"></td>
+            </tr>
+
+
+          <tr>
+            <td></td>
+            <td class="hint">
+              <input class="submit" type="submit" value="Add Category" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

@@ -29,13 +29,16 @@
     seller_dashboard  
     <header>  
 
-        <?php include("includes/navbar.php"); ?>
+        <?php
+session_start();
+         include("includes/navbar.php"); ?>
 
     </header>
 <div>
 
 <button><a href="addproductform.html">Add Products</a></button>
 <button><a href="addproduct.php">View Products</a></button>
+<button><a href="addcategoryform.html">Add Category</a></button>
 
 
 </div>
