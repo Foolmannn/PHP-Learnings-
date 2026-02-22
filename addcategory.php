@@ -81,30 +81,6 @@
 
 
 
-    $sql1 = "SELECT * FROM products";
-    $result1 = $conn->query($sql1);
-
-    echo "<table border='1'>";
-    echo "<tr><th>ID</th><th>Title</th><th>Price</th><th>Category</th><th>Description</th><th>Userid</th><th>Image_path</th></tr>";
-
-    if ($result1->num_rows > 0) {
-        while ($row = $result1->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>" . $row["productid"] . "</td>";
-            echo "<td>" . $row["title"] . "</td>";
-            echo "<td>" . $row["price"] . "</td>";
-            echo "<td>" . $row["categoryid"] . "</td>";
-            echo "<td>" . $row["description"] . "</td>";
-            echo "<td>" . $row["userid"] . "</td>";
-            echo "<td>" . $row["image"] . "</td>";
-            echo "</tr>";
-        }
-    } else {
-        echo "<tr><td colspan='3'>No data found</td></tr>";
-    }
-
-    echo "</table>";
-
 
     $conn->close();
     ?>
