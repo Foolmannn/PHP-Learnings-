@@ -70,6 +70,7 @@
             echo "<tr>";
             echo "<td>" . $row["categoryid"] . "</td>";
             echo "<td>" . $row["categoryname"] . "</td>";
+            echo "<td><a href=".$row["categoryid"].">Edit</a></td>";
             echo "</tr>";
         }
     } else {

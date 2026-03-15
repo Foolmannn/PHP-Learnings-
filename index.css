@@ -1,0 +1,25 @@
+.images{
+display: grid;
+grid-template-columns: auto auto auto auto;
+justify-content: center;
+}
+.card{
+    
+    height: 350px;
+    overflow: hidden;
+    padding: 10px 50px 10px 50px;
+    border: 2px solid rgb(140, 134, 134);
+    margin: 5px;
+    border-radius: 7px;
+    
+    
+}
+.image{
+    height: 200px;
+    overflow: hidden;
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}

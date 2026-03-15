@@ -52,8 +52,8 @@
             margin: 20px;
                      width: 150px;
             height: 40px;
-            background-color: var(--mainbg-dark-blue);
-            border-radius: 4px;
+            background-color: var( --main-primary-orange);
+            border-radius: 5px;
            
             border: none;
             cursor: pointer;

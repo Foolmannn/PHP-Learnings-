@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2">
+    <!-- <meta http-equiv="refresh" content="2"> -->
 
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="index.css">
 
     <style>
 
@@ -30,13 +31,25 @@
     }
      $sql1 = "SELECT * FROM products";
     $result1 = $conn->query($sql1);
-
+echo"<div class='images'>";
 while($row = $result1->fetch_assoc()) {
-    echo "<div>";
+    echo "<div class='card'>";
+    echo "<div class='image'>";
     echo "<img src='" . $row['image'] . "' width='200px'>";
+    echo"</div>";
+    echo"<div class='title'>";
+
+    echo $row['title'];
+     echo"</div>";
+    echo"<div class='price'>";
+    echo "Rs.". $row['price'];
+     echo"</div>";
+    echo"<div class='description'>";
+    echo $row['description'];
+     echo"</div>";
     echo "</div>";
 }
-
+echo"</div>";
     // echo "<section>
     //     <div class="card">
     //         <div class="image"><img src=".$row["image"]." alt=""></div>
